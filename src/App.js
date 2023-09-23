@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+import { NameItem } from './NameItem/NameItem';
 import './App.css';
 
 function App() {
+  const [names, setNames] = useState([])
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className='not-called'>
+        {/* List of names not yet called */}
+        <h2>On deck</h2>
+        <NameItem firstName={"Joe"} lastName={"blah"} timesCalled={3} />
+      </div>
+      <div>
+        <h2>Middle</h2>
+        {/* name of kiddo who is called on */}
+        {/* form to add names */}
+      </div>
+      <div className='called'>
+        <h2>Called</h2>
+        {/* List of names that have been called */}
+      </div>
+
     </div>
   );
 }

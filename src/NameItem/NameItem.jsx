@@ -1,10 +1,10 @@
 import './NameItem.css'
 
-export const NameItem = ({ firstName, lastName, timesCalled }) => {
+export const NameItem = ({ name, timesCalled, showCount=true }) => {
   return (
     <li>
-      <p className='name'>{`${firstName} ${lastName}`}</p>
-      <p>{`Called ${timesCalled} times`}</p>
+      <p className='name'>{`${name}`}</p>
+      {showCount && <p>{`Called ${timesCalled} times`}</p>}
     </li>
   )
 }

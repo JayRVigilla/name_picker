@@ -2,7 +2,7 @@
 
 I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel stifled by teachers not calling on her when her hand is up first and has been up first for every question... all... month... long.
 
-<iframe src="https://giphy.com/embed/py0qb70GvLwfC" width="480" height="194" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/hermione-granger-education-university-py0qb70GvLwfC">via GIPHY</a></p>
+![via GIPHY](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3E1c3J6Y3h0d3l6ZWxhaHRqbG9mMG9iNThpcDBxYnVwcHdzY3YybiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/py0qb70GvLwfC/giphy.gif)
 
  Teachers in a classroom can input the names of the students to populate the pool, then hit the `Pick a new speaker` button to get the next to respond. The list will recycle when everyone has had a turn. Our lil Gryffindor would still rather be called on every time, but they're settle for knowing everyone is picked randomly and gets the same amount of turns.
 

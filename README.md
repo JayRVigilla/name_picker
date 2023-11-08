@@ -6,6 +6,8 @@ I'm a proud parent that wants to make sure my own Hermione Granger doesn't feel 
 
  Teachers in a classroom can input the names of the students to populate the pool, then hit the `Pick a new speaker` button to get the next to respond. The list will recycle when everyone has had a turn. Our lil Gryffindor would still rather be called on every time, but they're settle for knowing everyone is picked randomly and gets the same amount of turns.
 
+![demo via GIPHY](https://media.giphy.com/media/WSDOwlgIfhEtKp9qb0/giphy.gif)
+
 To build a desktop app, `npm build` from the project folder. You can find your packaged app in the created “dist” folder. On macOS you will find a .dmg file, which you can move to programs and afterwards launch your app. Look for `namepicker`.
 
 This project's  was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -3,7 +3,6 @@ import { NameItem } from './Components/NameItem/NameItem';
 import { v4 as uuid } from "uuid";
 import { pickRandomNumber } from './utils/pickRandomNumber';
 import './App.css';
-// import * as fs from "fs-react"
 
 function App() {
   const [uncalled, setUncalled] = useState([]);
@@ -24,12 +23,10 @@ function App() {
 
 
     // select random index from a given length
-    // const index = Math.floor(Math.random() * uncalled.length);
     const index = pickRandomNumber(uncalled.length);
 
     // remove selected name
     const uncalledCopy = [...uncalled]
-    // let __ = uncalledCopy.splice(index, 1)
     uncalledCopy.splice(index, 1)
     setUncalled(uncalledCopy)
 
@@ -54,11 +51,12 @@ function App() {
     setUncalled(uncalledCopy)
   }
 
-  const getFromFile = () => {
-    const filePath = document.querySelector("#filePath").value
-    console.log(filePath)
-    // fs.readFile(filePath, 'utf8', (err, data) => console.log(data) )
-}
+  // TODO: get names from file
+//   const getFromFile = () => {
+//     const filePath = document.querySelector("#filePath").value
+//     console.log(filePath)
+//     // fs.readFile(filePath, 'utf8', (err, data) => console.log(data) )
+// }
 
   return (
     <div className="App">
@@ -84,14 +82,15 @@ function App() {
           <input type="text" name="newName" id="newName" tabIndex={0} />
           <button onClick={addName}>Add</button>
         </div>
-        {/* creates selector, need to get value */}
-        <input type="file" webkitdirectory directory accept='.txt, .doc, .docx, .rtf' id="filePath"/>
-          <button onClick={getFromFile}>Add from file</button>
+        {/* // TODO: part of importing names from external file
+        creates selector, need to get value */}
+        {/* <input type="file" webkitdirectory directory accept='.txt, .doc, .docx, .rtf' id="filePath"/>
+          <button onClick={getFromFile}>Add from file</button> */}
       </div>
 
       <div className='called'>
         <h2>Called</h2>
-        {/* List of uncalled that have been called */}
+        {/* List of people that have been called */}
         <ul className='list'>
           {called.map((name) => {
             return <NameItem name={name} key={uuid()} />

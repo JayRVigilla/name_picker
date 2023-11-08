@@ -3,19 +3,46 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 8px;
+  min-height: 40vh;
 
   & div {
-    /* border: 1px solid blue; */
+    /* border: 1px solid lightgray; */
     flex-direction: column;
     text-align: center;
     width: 100%;
+    border-radius: 12px;
+
     > div{
       margin: 3rem 0;
     }
+    /* NameItem */
     & ul{
       display: flex;
       flex-direction: column;
       padding: 0%;
+    }
+  }
+
+  & .not-called, .called {
+    /* gainsboro */
+    background-color: #DCDCDC;
+    height: 100%vh;
+  }
+
+  & .speaker{
+    > ul > li {
+      border-color: green;
+      > p {
+        color: green;
+      }
+    }
+  }
+  & .called{
+    > ul > li {
+      border-color: red;
+      > p {
+        color: red;
+      }
     }
   }
 }
